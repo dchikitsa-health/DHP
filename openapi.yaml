@@ -3,7 +3,11 @@ info:
   title: DHP Core API
   description: DHP Core API specification. This is an extension of Beckn core version 0.9.3-draft, commit - d4abe91e164d032ce5dd01e2ad7c0842166e88f8
   version: 0.7.1-draft
-
+servers:
+  - url: https://api.example.com/v1
+    description: Production server (uses live data)
+  - url: https://sandbox-api.example.com:8443/v1
+    description: Sandbox server (uses test data)
 paths:
   /search:
     post:
